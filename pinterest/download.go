@@ -6,7 +6,7 @@ import (
 	"strings"	
 	"github.com/PaulSonOfLars/gotgbot/v2"
 	"github.com/PaulSonOfLars/gotgbot/v2/ext"
-	"github.com/Mishel-07/PinterestBot/api"
+	"github.com/Mishel-07/PinterestBot/settings"
 )
 
 func ExtractURL(message string) string {
@@ -27,7 +27,7 @@ func DownloadSend(b *gotgbot.Bot, ctx *ext.Context) error {
 	}
 
 	link := ExtractURL(chk)
-	url, err := api.PinterestDownload(link)
+	url, err := settings.PinterestDownload(link)
 	fmt.Println(url)
         if err != nil {	
 	       message.Reply(b, "opps! An Error Occured Report on @XBOTSUPPORTS", &gotgbot.SendMessageOpts{})
