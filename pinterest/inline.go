@@ -7,7 +7,7 @@ import (
 
     "github.com/PaulSonOfLars/gotgbot/v2"
     "github.com/PaulSonOfLars/gotgbot/v2/ext"
-    "github.com/Mishel-07/PinterestBot/api"
+    "github.com/Mishel-07/PinterestBot/settings"
 )
 
 func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
@@ -26,7 +26,7 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
     }
 
     quotequery := strings.Replace(query, " ", "+", -1)
-    urls, err := api.SearchBingInline(quotequery)
+    urls, err := settings.SearchBingInline(quotequery)
     if err != nil {
         fmt.Println(err)
         _, err = ctx.InlineQuery.Answer(b, []gotgbot.InlineQueryResult{
