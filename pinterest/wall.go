@@ -6,7 +6,7 @@ import (
 
 	"github.com/PaulSonOfLars/gotgbot/v2"
 	"github.com/PaulSonOfLars/gotgbot/v2/ext"
-	"github.com/Mishel-07/PinterestBot/api"
+	"github.com/Mishel-07/PinterestBot/settings"
 )
 
 func WallSearch(b *gotgbot.Bot, ctx *ext.Context) error {
@@ -23,7 +23,7 @@ func WallSearch(b *gotgbot.Bot, ctx *ext.Context) error {
 		return nil
 	}
 	quotequery := strings.Replace(query, " ", "+", -1)
-	images := api.ScrapWallpapers(quotequery)
+	images := settings.ScrapWallpapers(quotequery)
 
 	media := make([]gotgbot.InputMedia, 0)
 	count := 0
