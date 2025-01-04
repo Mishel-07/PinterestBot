@@ -6,7 +6,7 @@ import (
     
     "github.com/PaulSonOfLars/gotgbot/v2"
     "github.com/PaulSonOfLars/gotgbot/v2/ext"
-    "github.com/Mishel-07/PinterestBot/api"
+    "github.com/Mishel-07/PinterestBot/settings"
 )
 
 func FindImage(b *gotgbot.Bot, ctx *ext.Context) error {
@@ -23,7 +23,7 @@ func FindImage(b *gotgbot.Bot, ctx *ext.Context) error {
 		return nil
     }
     quotequery := strings.Replace(query, " ", "+", -1)
-    urls, err := api.SearchPinterest(quotequery)
+    urls, err := settings.SearchPinterest(quotequery)
     if err != nil {
         fmt.Println(err)
         message.Reply(b, "Image not found", &gotgbot.SendMessageOpts{})
