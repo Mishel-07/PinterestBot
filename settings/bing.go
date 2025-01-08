@@ -14,7 +14,7 @@ type BingResponse struct {
 }
 
 func SearchBing(query string) (BingResponse, error) {
-    url := fmt.Sprintf("https://horrid-api.vercel.app/images?page=7&query=%s", query)
+    url := fmt.Sprintf("https://horrid-api.vercel.app/images?page=10&query=%s", query)
     resp, err := http.Get(url)
     if err != nil {
         return BingResponse{}, err
