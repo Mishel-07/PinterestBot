@@ -13,7 +13,7 @@ func FindImage(b *gotgbot.Bot, ctx *ext.Context) error {
     message := ctx.Message
     split := strings.SplitN(message.GetText(), " ", 2)            
     if len(split) < 2 {     
-        message.Reply(b, "No Query Provied So i can't send Photo, so Please Provide Query Eg: <code>/pinterest Iron man</code>", &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
+        message.Reply(b, "<b>No Query Provied So i can't send Photo, so Please Provide Query Eg:</b> <code>/pinterest Iron man</code>", &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
         return fmt.Errorf("no query provided")
     }
 
