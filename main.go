@@ -48,6 +48,7 @@ func main() {
 	dispatcher.AddHandler(handlers.NewCommand("start", settings.Start))
 	dispatcher.AddHandler(handlers.NewCommand("pinterest", pinterest.FindImage))
 	dispatcher.AddHandler(handlers.NewCommand("wallpaper", pinterest.WallSearch))
+	dispatcher.AddHandler(handlers.NewCommand("img", pinterest.BingImgCmd))
 	dispatcher.AddHandler(handlers.NewMessage(message.Text, pinterest.DownloadSend))
 	dispatcher.AddHandler(handlers.NewInlineQuery(inlinequery.All, pinterest.FindImageInline))
 	
