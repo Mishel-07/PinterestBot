@@ -14,7 +14,7 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
     split := strings.SplitN(message.GetText(), " ", 2)            
     if len(split) < 2 {     
         message.Reply(b, "<b>No Query Provied So i can't send Photo, so Please Provide Query", &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
-        return 
+        return nil
     }
 
     query := split[1]
