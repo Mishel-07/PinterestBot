@@ -51,10 +51,8 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
         
     _, err = b.SendMediaGroup(
         message.Chat.Id,
-        media,
-        &gotgbot.SendMediaGroupOpts{
-		ReplyToMessageId: message.MessageId,
-	},
+        media,	
+        &gotgbot.SendMediaGroupOpts{}
     )
     b.DeleteMessage(msg.Chat.Id, msg.MessageId, &gotgbot.DeleteMessageOpts{})
     if err != nil {
