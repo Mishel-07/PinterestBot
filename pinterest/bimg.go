@@ -49,7 +49,7 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
     }
          
         
-    _, err := b.SendMediaGroup(
+    _, err = b.SendMediaGroup(
         message.Chat.Id,
         media,
         &gotgbot.SendMediaGroupOpts{ReplyToMessageID: message.MessageID},
