@@ -57,7 +57,7 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
 		        MessageId: message.MessageId,
 			
 		},
-	}
+	},
     )
     b.DeleteMessage(msg.Chat.Id, msg.MessageId, &gotgbot.DeleteMessageOpts{})
     if err != nil {
