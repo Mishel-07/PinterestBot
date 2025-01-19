@@ -49,8 +49,8 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
     }
          
         
-    _, err = b.SendMediaGroup(
-        ctx.EffectiveUser.Id,
+    message.Reply.MediaGroup(
+        b,
         media,
         &gotgbot.SendMediaGroupOpts{},
     )
