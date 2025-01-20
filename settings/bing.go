@@ -9,7 +9,7 @@ import (
 
 type BingResponse struct {
     Result []struct {
-        URL string `json:"img"`
+        URL string `json:"images"`
     } `json:"result"` 
 }
 
