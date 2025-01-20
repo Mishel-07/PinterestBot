@@ -28,16 +28,3 @@ Welcome to PinterestBot: your friendly and efficient Pinterest Bot with numerous
 Make sure to set the following environment variable:
 
 - `TOKEN` - Obtain this from BotFather
-
-## Deploy 
-<details><summary>Deploy To Vercel</summary>
-<p>
-Follow these instructions to deploy this repo to <b>vercel</b>
-<ol type="1">
-<li><b>Fork</b> this repository 🍴</li>
-<li>Go to your <a href="https://vercel.com">vercel</a> dashboard and create a <b>Add New > Project</b></li>
-<li>Fill in the <b>TOKEN</b> environment</li>
-<li>Click <b>Deploy</b> and wait</li>
-</ol>
-</p>
-</details>
