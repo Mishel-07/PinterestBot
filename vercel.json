@@ -8,7 +8,7 @@
     "routes": [
         {
           "src": "/(.*)",
-          "dest": "go build ."
+          "dest": "go build main.go"
         }        
       ]
 }
