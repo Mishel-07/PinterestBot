@@ -17,6 +17,7 @@ func Start(b *gotgbot.Bot, ctx *ext.Context) error {
 			{
 				{Text: "Source", Url: "https://github.com/Mishel-07/PinterestBot"},
 			},
+			{
 				{Text: "Support", Url: "https://t.me/XBOTSUPPORTS"},
 			},
 		},
