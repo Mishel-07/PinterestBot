@@ -14,7 +14,7 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
         var query string
         var caption string 
         if strings.Contains(ctx.InlineQuery.Query, "!cap") {
-                split := strings.Split(ctx.InlineQuery.Query, "!cap")    
+                split := strings.Split(ctx.InlineQuery.OriginalHTML(), "!cap")    
                 caption = split[1]
                 if split[0] != "" {
                         query = split[0]
