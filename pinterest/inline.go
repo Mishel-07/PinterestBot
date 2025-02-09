@@ -70,6 +70,7 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
                                         Title: "Found Image",
                                         ThumbnailUrl: item.URL,
                                 })
+                        }
                 } else {
                         fmt.Println("Skipped empty URL")
                 }
