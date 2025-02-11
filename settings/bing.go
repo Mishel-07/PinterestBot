@@ -13,8 +13,8 @@ type BingResponse struct {
         } `json:"result"` 
 }
 
-func SearchBing(query string, count string) (BingResponse, error) {
-        url := fmt.Sprintf("https://horrid-api.vercel.app/images?page=%s&query=%s", count, query)
+func SearchBing(query string, count int64) (BingResponse, error) {
+        url := fmt.Sprintf("https://horrid-api.vercel.app/images?page=%d&query=%s", count, query)
         resp, err := http.Get(url)
         if err != nil {
                 return BingResponse{}, err
