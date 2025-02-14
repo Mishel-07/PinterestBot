@@ -28,13 +28,13 @@ func main() {
 	} 
 	webhook := os.Getenv("WEBHOOK")
 	if webhook == "" {
-		webhook = "True"
+		webhook = "true"
 	}
 	b, err := gotgbot.NewBot(token, nil)
 	if err != nil {
 		panic("failed to create new bot: " + err.Error())
 	}
-        if webhook != "False" {
+        if webhook != "false" {
 	        go func() {
 		        http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
 			        fmt.Fprintf(w, "Hello World")
