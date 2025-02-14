@@ -44,14 +44,14 @@ func WallSearch(b *gotgbot.Bot, ctx *ext.Context) error {
 	}
 
 	b.SendMediaGroup(
-            message.Chat.Id,
-            media,	
-            &gotgbot.SendMediaGroupOpts{
-		    ReplyParameters: &gotgbot.ReplyParameters{					
-		            MessageId: message.MessageId,
+                message.Chat.Id,
+                media,	
+                &gotgbot.SendMediaGroupOpts{
+	                ReplyParameters: &gotgbot.ReplyParameters{					
+		                MessageId: message.MessageId,
 			
-		    },
-	    },
+		        },
+	        },
         )
 	b.DeleteMessage(msg.Chat.Id, msg.MessageId, &gotgbot.DeleteMessageOpts{})
 
