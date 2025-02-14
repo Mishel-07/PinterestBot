@@ -10,6 +10,15 @@ import (
         "github.com/Mishel-07/PinterestBot/settings"
 )
 
+func EscapeMarkdownV2(text string) string {
+	specialChars := []string{"[", "]", "-", "(", ")", "~", ">", "#", "+", "=", "{", "}", ".", "!"}	
+	for _, char := range specialChars {	
+		text = strings.ReplaceAll(text, char, "\\"+char)
+	}
+	
+	return text
+}
+
 func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {                
         var query string
         var caption string 
@@ -59,8 +68,8 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
                                 media = append(media, gotgbot.InlineQueryResultPhoto{
                                         Id: fmt.Sprintf("%d", rand.Int()),
                                         PhotoUrl: item.URL,   
-                                        Caption: caption,
-                                        ParseMode: "Html",
+                                        Caption: EscapeMarkdownV2(caption),
+                                        ParseMode: "MarkdownV2",
                                         Title: "Found Image",
                                         ThumbnailUrl: item.URL,
                                 })
