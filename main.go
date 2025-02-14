@@ -26,18 +26,23 @@ func main() {
 	if port == "" {
 		port = "8080"
 	} 
+	webhook := os.Getenv("WEBHOOK")
+	if webhook == "" {
+		webhook = "True"
+	}
 	b, err := gotgbot.NewBot(token, nil)
 	if err != nil {
 		panic("failed to create new bot: " + err.Error())
 	}
+        if webhook != "False" {
+	        go func() {
+		        http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
+			        fmt.Fprintf(w, "Hello World")
+		        })
 
-	go func() {
-		http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
-			fmt.Fprintf(w, "Hello World")
-		})
-
-		http.ListenAndServe(":" + port, nil)
-	}()
+		        http.ListenAndServe(":" + port, nil)
+	        }()
+	}
 
 	dispatcher := ext.NewDispatcher(&ext.DispatcherOpts{		
 		Error: func(b *gotgbot.Bot, ctx *ext.Context, err error) ext.DispatcherAction {
