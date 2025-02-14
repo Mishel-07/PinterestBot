@@ -16,14 +16,16 @@ import (
 )
 
 
-func main() {	
-	
+func main() {		
 	token := os.Getenv("TOKEN")
 	if token == "" {
 		panic("TOKEN environment variable is empty")
 	}
 
-	
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	} 
 	b, err := gotgbot.NewBot(token, nil)
 	if err != nil {
 		panic("failed to create new bot: " + err.Error())
@@ -34,7 +36,7 @@ func main() {
 			fmt.Fprintf(w, "Hello World")
 		})
 
-		http.ListenAndServe(":8080", nil)
+		http.ListenAndServe(":" + port, nil)
 	}()
 
 	dispatcher := ext.NewDispatcher(&ext.DispatcherOpts{		
