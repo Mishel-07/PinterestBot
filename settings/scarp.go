@@ -51,9 +51,8 @@ func ScrapWallpapers(query string) []string {
 		imgTag := s.Find("img")
 		imgURL := imgTag.AttrOr("data-src", "")
 		if imgURL != "" {
-			imageURL := strings.Join(strings.Split(pageURL, "/")[:len(strings.Split(pageURL, "/")) - 1], "/") + imgURL
-			okayurl := strings.Replace(imageURL, "search/", "", 1)
-			imagesData = append(imagesData, okayurl)
+			imageURL := strings.Join(strings.Split("https://wallpapers.com/", "/")[:len(strings.Split(pageURL, "/")) - 1], "/") + imgURL			
+			imagesData = append(imagesData, imageURL)
 		}
 	})
 
