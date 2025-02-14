@@ -10,9 +10,9 @@ import (
 )
 
 func ExtractURL(message string) string {
-    pattern := regexp.MustCompile(`https?://\S+`)
-    match := pattern.FindString(message)
-    return match
+        pattern := regexp.MustCompile(`https?://\S+`)
+	match := pattern.FindString(message)
+        return match
 }
 
 func DownloadSend(b *gotgbot.Bot, ctx *ext.Context) error {
