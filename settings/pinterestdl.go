@@ -7,7 +7,7 @@ import (
 )
 
 func PinterestDownload(link string) (string, error) {
-        url := "https://horrid-api.vercel.app/download_pin?url=" + link
+        url := "https://horridapi.onrender.com/download_pin?url=" + link
         resp, err := http.Get(url)
         if err != nil {
                 return "", err
