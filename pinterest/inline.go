@@ -62,7 +62,7 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
         }
 
         media := make([]gotgbot.InlineQueryResult, 0)
-        for _, item := range urls.Result {
+        for _, item := range urls {
                 if item.URL != "" {
                         if caption != "" {
                                 media = append(media, gotgbot.InlineQueryResultPhoto{
