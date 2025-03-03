@@ -44,9 +44,8 @@ func FindImageInline(b *gotgbot.Bot, ctx *ext.Context) error {
                         },
                 }, nil)
                 return err
-        }
-        quotequery := strings.Replace(query, " ", "+", -1)
-        urls, err := settings.SearchBing(quotequery, 40)
+        }        
+        urls, err := settings.SearchBing(query, 40)
         if err != nil {
                 fmt.Println(err)
                 _, err = ctx.InlineQuery.Answer(b, []gotgbot.InlineQueryResult{
