@@ -21,9 +21,8 @@ func BingImgCmd(b *gotgbot.Bot, ctx *ext.Context) error {
         msg, fck := message.Reply(b, "<b>Searching...🔎</b>", &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
 	if fck != nil {
 		return nil
-        }
-        quotequery := strings.Replace(query, " ", "+", -1)
-        urls, err := settings.SearchBing(quotequery, 8)
+        }       
+        urls, err := settings.SearchBing(query, 8)
         if err != nil {
                 fmt.Println(err)
                 message.Reply(b, "<b>Hey, No image Found So Report Here @XBOTSUPPORTS</b>", &gotgbot.SendMessageOpts{ParseMode: gotgbot.ParseModeHTML})
