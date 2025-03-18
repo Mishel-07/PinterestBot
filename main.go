@@ -24,7 +24,7 @@ func KeepOnline() {
                         fmt.Println("Error making request:", err)
                 }
                 defer resp.Body.Close()
-                time.Sleep(111 * time.Millisecond)
+                time.Sleep(48 * time.Millisecond)
         }
 }
 
