@@ -6,6 +6,7 @@ import (
 	"os"
 	"fmt"
 	"time"
+	
 	"github.com/PaulSonOfLars/gotgbot/v2"
 	"github.com/PaulSonOfLars/gotgbot/v2/ext"
 	"github.com/Mishel-07/PinterestBot/pinterest"
@@ -15,6 +16,17 @@ import (
 	"github.com/PaulSonOfLars/gotgbot/v2/ext/handlers/filters/inlinequery"
 )
 
+func KeepOnline() {
+	url := os.Getenv("URL")
+	for {
+                resp, err := http.Get(url)
+                if err != nil {
+                        fmt.Println("Error making request:", err)
+                }
+                defer resp.Body.Close()
+                time.Sleep(111 * time.Millisecond)
+        }
+}
 
 func main() {		
 	token := os.Getenv("TOKEN")
@@ -42,6 +54,7 @@ func main() {
 
 		        http.ListenAndServe(":" + port, nil)
 	        }()
+		go KeepOnline()
 	}
 
 	dispatcher := ext.NewDispatcher(&ext.DispatcherOpts{		
