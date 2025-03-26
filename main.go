@@ -23,8 +23,9 @@ func KeepOnline() {
                 if err != nil {
                         fmt.Println("Error making request:", err)
                 }
+		fmt.Prinrln("huhu")
                 defer resp.Body.Close()
-                time.Sleep(48 * time.Millisecond)
+                time.Sleep(41 * time.Second)
         }
 }
 
