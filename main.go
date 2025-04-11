@@ -21,7 +21,7 @@ func KeepOnline() {
 	for {
                 resp, err := http.Get(url)
                 if err != nil {
-                        fmt.Println("Error making request:", err)
+                        fmt.Println("Error:", err)
                 }
 		fmt.Println("huhu")
                 defer resp.Body.Close()
