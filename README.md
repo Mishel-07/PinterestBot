@@ -1,6 +1,6 @@
 # PinterestBot
 
-Welcome to **PinterestBot** — your friendly and efficient Telegram bot with exciting features!
+Welcome to **PinterestBot** your friendly and efficient Telegram bot with exciting features!
 
 This bot can:
 - Download images from Pinterest links
@@ -10,14 +10,14 @@ This bot can:
 
 ---
 
-## Demo & Support
+## Support
 
 - **Try it**: [Sample Bot](https://t.me/ImgRobot)
 - **Support**: [Join Group](https://t.me/XBOTSUPPORTS)
 
 ---
 
-## Commands (Use with query)
+## Commands 
 
 ```
 /pinterest <query> - Search and download Pinterest images
@@ -48,5 +48,5 @@ Set the following in your environment:
 TOKEN   - Your bot token from BotFather
 PORT    - Optional: defaults to 8080
 WEBHOOK - Optional: set to "false" to disable
-URL     - Optional: your hosting URL (used to keep bot awake)
+URL     - Optional: If you're hosting on a Koyeb or Render-like server and the bot occasionally stops, you can use this to set the Render/Koyeb URL. This is specifically for web-only support servers. If there are no requests for 2 minutes, the server may stop. You can enable WEBHOOK to prevent this behavior.
 ```
