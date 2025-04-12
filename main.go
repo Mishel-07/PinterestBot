@@ -16,14 +16,12 @@ import (
 	"github.com/PaulSonOfLars/gotgbot/v2/ext/handlers/filters/inlinequery"
 )
 
-func KeepOnline() {
-	url := os.Getenv("URL")
+func KeepOnline(url string) {	
 	for {
                 resp, err := http.Get(url)
                 if err != nil {
                         fmt.Println("Error:", err)
-                }
-		fmt.Println("huhu")
+                }	
                 defer resp.Body.Close()
                 time.Sleep(41 * time.Second)
         }
@@ -55,7 +53,10 @@ func main() {
 
 		        http.ListenAndServe(":" + port, nil)
 	        }()
-		go KeepOnline()
+		url := os.Getenv("URL")
+		if url != "" {
+		        go KeepOnline()
+		}
 	}
 
 	dispatcher := ext.NewDispatcher(&ext.DispatcherOpts{		
