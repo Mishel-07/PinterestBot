@@ -1,30 +1,52 @@
 # PinterestBot
 
-Welcome to PinterestBot: your friendly and efficient Pinterest Bot with numerous exciting features! This bot is capable of downloading images from Pinterest links, performing Pinterest searches, accessing Google and Bing images, and even providing wallpapers. 
+Welcome to **PinterestBot** — your friendly and efficient Telegram bot with exciting features!
 
-## Demo and Support
+This bot can:
+- Download images from Pinterest links
+- Perform Pinterest searches
+- Fetch wallpapers
+- Access Google and Bing images
 
-- Try out our [Sample bot](https://t.me/ImgRobot) for a demonstration.
-- Join our [Support group](https://t.me/XBOTSUPPORTS) for any inquiries, feedback, or simply to chat.
+---
 
-## Commands
+## Demo & Support
+
+- **Try it**: [Sample Bot](https://t.me/ImgRobot)
+- **Support**: [Join Group](https://t.me/XBOTSUPPORTS)
+
+---
+
+## Commands (Use with query)
 
 ```
-/start - Start the bot
-/pinterest - Search and download Pinterest images
-/wallpaper - wallpaper image from wallpaper.com
-/img - from bing image
+/pinterest <query> - Search and download Pinterest images
+/wallpaper <query> - Get a wallpaper from wallpaper.com
+/img <query>       - Search images using Bing
 ```
+
+You can also use these features via **inline mode**:
+- Type `@YourBotUsername <query>` in any chat
+
+---
 
 ## Features
 
-- Download images from Pinterest links
-- Perform Pinterest searches
-- Access Google and Bing images
-- Get wallpapers
+- Download images from direct Pinterest links
+- Search Pinterest and return top image results
+- Access wallpapers from wallpaper.com
+- Bing image search support
+- Full inline mode support for image search
 
-## Variables
+---
 
-Make sure to set the following environment variable:
+## Environment Variables
 
-- `TOKEN` - Obtain this from BotFather
+Set the following in your environment:
+
+```
+TOKEN   - Your bot token from BotFather
+PORT    - Optional: defaults to 8080
+WEBHOOK - Optional: set to "false" to disable
+URL     - Optional: your hosting URL (used to keep bot awake)
+```
