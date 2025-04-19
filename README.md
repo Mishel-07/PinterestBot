@@ -1,4 +1,4 @@
- PinterestBot
+# PinterestBot
 
 Welcome to PinterestBot — your friendly and efficient Telegram bot with a variety of image-focused features.
 
