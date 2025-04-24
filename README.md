@@ -21,14 +21,17 @@ A powerful and useful Pinterest image downloader and search bot, with support fo
 You can also use this bot with inline queries in any chat.
 
 **Usage:**
+
 ```
 @ImgRobot <query>
 ```
 
 **Add caption:**  
+
 Include `!cap` followed by your caption text to send the image with a custom message.
 
 **Example:**
+
 ```
 @ImgRobot Spider man !cap **You like this image?**
 ```
