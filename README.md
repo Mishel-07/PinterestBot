@@ -26,11 +26,11 @@ You can also use this bot with inline queries in any chat.
 @ImgRobot <query>
 ```
 
-**Add caption:**  
+- **Add caption:**  
 
 Include `!cap` followed by your caption text to send the image with a custom message.
 
-**Example:**
+- **Example:**
 
 ```
 @ImgRobot Spider man !cap **You like this image?**
