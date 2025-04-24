@@ -2,18 +2,9 @@
 
 A powerful and useful Pinterest image downloader and search bot, with support for Bing image search and inline image search functionality.
 
-## Features
-
-- Download images from Pinterest links  
-- Search Pinterest directly  
-- Fetch wallpapers from wallpaper.com  
-- Bing image search supported  
-- Inline Mode for quick results  
-- Clean and user-friendly commands
-
 ## Support
 
-[![Support Group](https://img.shields.io/badge/Try%20Support-Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
+[![Support Group](https://img.shields.io/badge/Support+Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
 
 [![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/ImgRobot)
 
