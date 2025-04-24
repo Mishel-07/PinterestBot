@@ -20,7 +20,7 @@ A powerful and useful Pinterest image downloader and search bot, with support fo
 
 You can also use this bot with inline queries in any chat.
 
-**Usage:**
+- **Usage:**
 
 ```
 @ImgRobot <query>
