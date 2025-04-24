@@ -1,4 +1,5 @@
 # PinterestBot  
+
 Powerful & Handy Pinterest Image Downloader with Inline and Bing Search Support
 
 ## Features
@@ -12,8 +13,7 @@ Powerful & Handy Pinterest Image Downloader with Inline and Bing Search Support
 
 ## Support
 
-[![Support Group](https://img.shields.io/badge/Support-30302f?style=flat&logo=telegram)](https://t.me/XBOTSUPPORTS)  
-If you have any doubts or questions, feel free to ask here — we're happy to help!
+[![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
 
 [![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/ImgRobot)
 
