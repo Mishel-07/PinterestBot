@@ -4,7 +4,7 @@ A powerful and useful Pinterest image downloader and search bot, with support fo
 
 ## Support
 
-[![Support Group](https://img.shields.io/badge/Support%20Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
+[![Support Group](https://img.shields.io/badge/Telegram%20Support-Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
 
 [![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/ImgRobot)
 
@@ -44,8 +44,7 @@ Supports `Markdown` formatting in captions too!
 
 ## Contributing
 
-Pull requests and ideas are always welcome!  
-Please keep your contributions clean, tested, and documented.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 ## License
 
