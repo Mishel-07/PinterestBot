@@ -28,27 +28,27 @@ A powerful and useful Pinterest image downloader and search bot. Supports inline
 
 You can also search directly from any chat using inline mode.
 
-**Usage:**
+Usage:
 ```
 @ImgRobot <query>
 ```
 
-**With caption:**
+With caption:  
 Add `!cap` followed by your caption to make the bot send the image with a custom caption.
 
-**Example:**
+Example:
 ```
 @ImgRobot Spider man !cap You like this image?
 ```
 
-Supports **Markdown formatting** in captions too!
+Supports `Markdown` formatting in captions too!
 
-## Setup Environment
+## Variables
 
-**TOKEN** – You can get this from [@BotFather](https://telegram.dog/BotFather)  
-**PORT** – Optional (defaults to 8080)  
-**WEBHOOK** – Optional (set to `false` to disable)  
-**URL** – Optional (used for platforms like Koyeb or Render to prevent bot inactivity)
+`TOKEN` – You can get this from [@BotFather](https://telegram.dog/BotFather)  
+`PORT` – Optional (defaults to 8080)  
+`WEBHOOK` – Optional (set to `false` to disable)  
+`URL` – Optional (used for platforms like Koyeb or Render to prevent bot inactivity)
 
 ## Contributing
 
