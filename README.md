@@ -4,7 +4,7 @@ A powerful and useful Pinterest image downloader and search bot, with support fo
 
 ## Support
 
-[![Support Group](https://img.shields.io/badge/Telegram%20Support-Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
+[![Support Group](https://img.shields.io/badge/Telegram-Support%20Group-blue?style=for-the-badge&logo=telegram)](https://t.me/XBOTSUPPORTS)
 
 [![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/ImgRobot)
 
