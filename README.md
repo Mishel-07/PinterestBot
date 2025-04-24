@@ -1,20 +1,19 @@
-# PinterestBot 
-
-A **Powerful** and **Useful** Pinterest image downloader and search bot. Supports **Inline Searches**, **Bing Image Search**, and **Wallpaper Fetching**.
+# PinterestBot  
+Powerful & Handy Pinterest Image Downloader with Inline and Bing Search Support
 
 ## Features
 
-- **Download** images from Pinterest links  
-- **Search** Pinterest for image results  
-- **Fetch** wallpapers from wallpaper.com  
-- **Search** images using Bing  
-- **Full Inline Mode** support  
-- Simple and **Easy to Use** commands  
+- Download images from Pinterest links  
+- Search Pinterest directly  
+- Fetch wallpapers from wallpaper.com  
+- Bing image search supported  
+- Inline Mode for quick results  
+- Clean and user-friendly commands
 
 ## Support
 
-[![Support](https://img.shields.io/badge/Support-30302f?style=flat&logo=telegram)](https://t.me/XBOTSUPPORTS)  
-If you have any **doubts**, feel free to **ask in the support group**!
+[![Support Group](https://img.shields.io/badge/Support-30302f?style=flat&logo=telegram)](https://t.me/XBOTSUPPORTS)  
+If you have any doubts or questions, feel free to ask here — we're happy to help!
 
 [![Demo Bot](https://img.shields.io/badge/Try%20Bot-ImgRobot-blue?style=for-the-badge&logo=telegram)](https://t.me/ImgRobot)
 
@@ -28,15 +27,15 @@ If you have any **doubts**, feel free to **ask in the support group**!
 
 ## Inline Mode
 
-You can also search directly from any chat using inline mode.
+You can also use this bot with inline queries in any chat.
 
 **Usage:**
 ```
 @ImgRobot <query>
 ```
 
-**With Caption:**  
-Add `!cap` followed by your caption to send the image with custom text.
+**Add caption:**  
+Include `!cap` followed by your caption text to send the image with a custom message.
 
 **Example:**
 ```
@@ -54,11 +53,10 @@ Supports `Markdown` formatting in captions too!
 
 ## Contributing
 
-Contributions are welcome!  
-Feel free to submit issues or pull requests to improve this project.  
-Make sure your changes are clean and well-documented.
+Pull requests and ideas are always welcome!  
+Please keep your contributions clean, tested, and documented.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).  
-You're free to use, modify, and distribute this bot with attribution.
+Use it freely, modify it, and share it with credit.
