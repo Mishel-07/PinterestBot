@@ -40,10 +40,10 @@ Supports `Markdown` formatting in captions too!
 
 ## Variables
 
-`TOKEN`: You can get this from [@BotFather](https://telegram.dog/BotFather)  
-`PORT`: Optional (defaults to 8080)  
-`WEBHOOK`: Optional (set to `false` to disable)  
-`URL`: Optional (used for platforms like Koyeb or Render to prevent bot inactivity)
+- `TOKEN` You can get this from [@BotFather](https://telegram.dog/BotFather)  
+- `PORT` Optional (defaults to 8080)  
+- `WEBHOOK` Optional (set to `false` to disable)  
+- `URL` Optional (used for platforms like Koyeb or Render to prevent bot inactivity)
 
 ## Contributing
 
