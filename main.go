@@ -55,7 +55,7 @@ func main() {
 	        }()
 		url := os.Getenv("URL")
 		if url != "" {
-		        go KeepOnline()
+		        go KeepOnline(url)
 		}
 	}
 
