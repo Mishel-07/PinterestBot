@@ -15,7 +15,7 @@ type ImageObject struct {
 
 func SearchBing(keyword string, nbImages int) ([]ImageObject, error) {
 	query := strings.ReplaceAll(keyword, " ", "+")
-	url := fmt.Sprintf("https://www.bing.com/images/search?q=%s", query)
+	url := fmt.Sprintf("https://www.bing.com/images/search?q=%s&safeSearch=strict", query)
 	
 	resp, err := http.Get(url)
 	if err != nil {
