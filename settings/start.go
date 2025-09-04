@@ -2,16 +2,16 @@ package settings
 
 import (	
 	"fmt"
-        "github.com/PaulSonOfLars/gotgbot/v2"
-        "github.com/PaulSonOfLars/gotgbot/v2/ext"
+    "github.com/PaulSonOfLars/gotgbot/v2"
+    "github.com/PaulSonOfLars/gotgbot/v2/ext"
 )
 
 
 func Start(b *gotgbot.Bot, ctx *ext.Context) error {    
-        message := ctx.Message
-        if message.Chat.Type != "private" {
-                return nil
-        }
+    message := ctx.Message
+    if message.Chat.Type != "private" {
+        return nil
+    }
 	buttons := gotgbot.InlineKeyboardMarkup{
 		InlineKeyboard: [][]gotgbot.InlineKeyboardButton{
 			{
