@@ -1,12 +1,13 @@
 package settings 
 
 import (
-	"fmt"
-	"github.com/PuerkitoBio/goquery"
+	"fmt"	
 	"math/rand"
 	"net/http"
 	"strconv"
 	"strings"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 func ScrapWallpapers(query string) []string {
