@@ -18,13 +18,13 @@ import (
 
 func KeepOnline(url string) {	
 	for {
-                resp, err := http.Get(url)
-                if err != nil {
-                        fmt.Println("Error:", err)
-                }	
-                defer resp.Body.Close()
-                time.Sleep(41 * time.Second)
-        }
+        resp, err := http.Get(url)
+        if err != nil {
+            fmt.Println("Error:", err)
+        }	
+        defer resp.Body.Close()
+        time.Sleep(41 * time.Second)
+    }
 }
 
 func main() {		
@@ -45,17 +45,17 @@ func main() {
 	if err != nil {
 		panic("failed to create new bot: " + err.Error())
 	}
-        if webhook != "false" {
-	        go func() {
-		        http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
-			        fmt.Fprintf(w, "Hello World")
-		        })
+    if webhook != "false" {
+	    go func() {
+		    http.HandleFunc("/", func(w http.ResponseWriter, _ *http.Request) {
+			    fmt.Fprintf(w, "Hello World")
+		    })
 
-		        http.ListenAndServe(":" + port, nil)
-	        }()
+		    http.ListenAndServe(":" + port, nil)
+	    }()
 		url := os.Getenv("URL")
 		if url != "" {
-		        go KeepOnline(url)
+		    go KeepOnline(url)
 		}
 	}
 
